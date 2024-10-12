@@ -3,3 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .primary-btn {
+        @apply bg-primary border-[1px] border-primary hover:bg-white hover:text-primary cursor-pointer text-white font-semibold py-4 px-3 rounded-lg hover:!scale-105 duration-300;
+    }
+    .secondary-btn {
+        @apply bg-white border-secondary text-secondary hover:bg-secondary hover:text-white cursor-pointer font-semibold py-3 px-6 rounded-lg hover:!scale-105 duration-300;
+    }
+}
+
+@layer utilities {
+    .drop-shadow {
+        filter: drop-shadow(-6px 8px 15px rgba(0, 0, 0, 0.2));
+    }
+}
