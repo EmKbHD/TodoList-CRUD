@@ -13,7 +13,7 @@ const Navbar = () => {
                 {/* logo area */}
                 <div className="font-suse font-bold text-3xl flex items-center gap-2 hover:opacity-[.9]">
                     {/* <VoteIcon /> */}
-                    <a href="/" className="text-[#EE6A65]">
+                    <a href="/" className="text-secondary">
                         e<span className="text-[#173C6C]">Voty</span>
                     </a>
                 </div>

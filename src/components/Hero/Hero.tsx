@@ -5,10 +5,10 @@ const Hero = () => {
     return (
         <>
             <section>
-                <div className="container border grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
+                <div className="container border grid align-items-center grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
                     {/* Company information */}
                     <div className=" border flex flex-col justify-center py-14 md:py-0 ">
-                        <div className=" space-y-6">
+                        <div className="border space-y-6">
                             <h1 className="text-4xl text-primary lg:text-5xl font-suse font-bold leading-tight capitalize">
                                 Vote from <br />{' '}
                                 <span className="text-secondary opacity-70">
@@ -30,8 +30,8 @@ const Hero = () => {
                                 </ol>
                             </p>
                             {/* CTA button here */}
-                            <div className=" font-semibold flex justify-center items-center gap-4 md:justify-start !mt-4">
-                                <button className="primary-btn grow flex justify-center items-center ">
+                            <div className="md:max-w-[400px] font-semibold flex justify-center items-center gap-4 md:justify-start !mt-4">
+                                <button className=" max-w-[190px] primary-btn grow flex justify-center items-center ">
                                     Get started
                                 </button>
                                 <button className=" secondary-btn flex justify-center items-center ">
@@ -42,11 +42,11 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Hero image */}
-                    <div className="border flex items-center justify-start md:justify-normal ">
+                    <div className="border order-first md:order-none flex justify-center items-center md:justify-normal ">
                         <img
                             src={HeroImage}
                             alt="VOTE IMAGE"
-                            className="w-[22rem] md:w-[550px] xl:w-[34.38rem] drop-shadow "
+                            className="w-[21.875rem] h-4/5 md:w-[34.375rem] xl:w-[43.75rem] drop-shadow "
                         />
                     </div>
                 </div>

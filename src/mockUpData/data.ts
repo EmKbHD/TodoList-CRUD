@@ -6,11 +6,16 @@ export const NavbarMenu = [
  },
  {
   id:2,
-  title:"About us",
+  title:"Pricing",
   link:"#"
  },
  {
   id:3,
+  title:"About us",
+  link:"#"
+ },
+ {
+  id:4,
   title:"Contact",
   link:"#"
  },
