@@ -3,23 +3,28 @@ import { Link } from 'react-router-dom'
 
 const Features = () => {
     return (
-        <div className="container">
-            <div className="md:grid-cols-4 gap-6">
+        <div className="container my-[64px]">
+            <h2 className="text-3xl font-bold text-center my-[32px] font-suse ">
+                Features
+            </h2>
+            <div className="grid md:grid-cols-4 gap-6">
                 {FeaturesData.map((item) => {
                     return (
-                        <div className="space-y-4 p-6 my-2 bg-[#fbfbfb] rounded-lg shadow-lg">
+                        <div className="space-y-4 p-6 my-2 bg-[#fbfbfb] grid rounded-lg shadow-lg">
                             <div>
                                 {/* Render icon as a JSX component */}
                                 {item.icon && (
-                                    <item.icon className="w-16 h-16 text-gray-600" />
+                                    <item.icon className="w-16 h-16 text-secondary/80" />
                                 )}
                             </div>
-                            <p className="text-2xl font-semibold">
+                            <div className="text-2xl font-semibold">
                                 {item.title}
+                            </div>
+                            <p className="text-gray-600 text-center">
+                                {item.desc}
                             </p>
-                            <p className="text-gray-600">{item.desc}</p>
                             <Link to={item.button.link}>
-                                <button className="primary-btn mt-2 !py-2 flex items-center justify-center font-semibold ">
+                                <button className="primary-btn-outline mt-2 !py-2 flex items-center justify-center font-semibold ">
                                     {/* Render icon as a JSX component */}
                                     {item.button.desc}
                                     {item.button.icon && (
@@ -30,7 +35,6 @@ const Features = () => {
                         </div>
                     )
                 })}
-                ;
             </div>
         </div>
     )

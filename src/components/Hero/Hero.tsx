@@ -5,13 +5,13 @@ const Hero = () => {
     return (
         <>
             <section>
-                <div className="container border grid align-items-center grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
+                <div className="container grid align-items-center grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
                     {/* Company information */}
-                    <div className=" border flex flex-col justify-center py-14 md:py-0 ">
-                        <div className="border space-y-6">
+                    <div className=" flex flex-col justify-center py-14 md:py-0 ">
+                        <div className=" space-y-6">
                             <h1 className="text-4xl text-primary lg:text-5xl font-suse font-bold leading-tight capitalize">
                                 Vote from <br />{' '}
-                                <span className="text-secondary opacity-70">
+                                <span className="text-secondary/80">
                                     Anywhere you are
                                 </span>{' '}
                                 {''}
@@ -34,7 +34,7 @@ const Hero = () => {
                                 <button className=" max-w-[190px] primary-btn grow flex justify-center items-center ">
                                     Get started
                                 </button>
-                                <button className=" secondary-btn flex justify-center items-center ">
+                                <button className=" secondary-btn hover:!bg-transparent hover:!text-secondary flex justify-center items-center ">
                                     <PlayCircleIcon className="w-8" />{' '}
                                     <span>Watch demo</span>
                                 </button>
@@ -42,7 +42,7 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Hero image */}
-                    <div className="border order-first md:order-none flex justify-center items-center md:justify-normal ">
+                    <div className=" order-first md:order-none flex justify-center items-center md:justify-normal ">
                         <img
                             src={HeroImage}
                             alt="VOTE IMAGE"

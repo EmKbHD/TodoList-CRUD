@@ -8,6 +8,9 @@
     .primary-btn {
         @apply bg-primary border-[1px] border-primary hover:bg-transparent hover:text-primary cursor-pointer text-white font-semibold py-4 px-3 rounded-lg hover:!scale-105 duration-300;
     }
+    .primary-btn-outline {
+        @apply bg-none border-[1px] border-primary hover:bg-primary hover:text-white cursor-pointer text-primary font-semibold py-4 px-3 rounded-lg hover:!scale-105 duration-300;
+    }
     .secondary-btn {
         @apply border-secondary text-secondary hover:bg-secondary hover:text-white cursor-pointer font-semibold py-3 px-6 rounded-lg hover:!scale-105 duration-300;
     }

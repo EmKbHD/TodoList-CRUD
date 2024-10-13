@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="border container flex justify-between items-center py-5 ">
+            <nav className=" container flex justify-between items-center py-5 ">
                 {/* <div className="container flex justify-between items-center py-5"> */}
                 {/* logo area */}
                 <div className="font-suse font-bold text-3xl flex items-center gap-2 hover:opacity-[.9]">
