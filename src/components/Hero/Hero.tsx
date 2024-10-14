@@ -1,5 +1,6 @@
 import { PlayCircleIcon } from '@heroicons/react/24/solid'
 import HeroImage from '../../assets/vote-undraw.svg'
+// import { motion } from 'framer-motion'
 
 const Hero = () => {
     return (
@@ -8,7 +9,7 @@ const Hero = () => {
                 <div className="container grid align-items-center grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
                     {/* Company information */}
                     <div className=" flex flex-col justify-center py-14 md:py-0 ">
-                        <div className=" space-y-6">
+                        <div className=" space-y-6 ">
                             <h1 className="text-4xl text-primary lg:text-5xl font-suse font-bold leading-tight capitalize">
                                 Vote from <br />{' '}
                                 <span className="text-secondary/80">
@@ -30,7 +31,7 @@ const Hero = () => {
                                 </ol>
                             </p>
                             {/* CTA button here */}
-                            <div className="md:max-w-[400px] font-semibold flex justify-center items-center gap-4 md:justify-start !mt-4">
+                            <div className="md:max-w-[400px] font-semibold flex gap-4 md:justify-start !mt-4">
                                 <button className=" max-w-[190px] primary-btn grow flex justify-center items-center ">
                                     Get started
                                 </button>

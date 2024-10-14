@@ -13,8 +13,8 @@ const bgStyle = {
 function App() {
     return (
         <div className="overflow-x-hidden font-sans">
-            <div style={bgStyle} className=" max-[768px]:!bg-none ">
-                <Navbar />
+            <Navbar />
+            <div style={bgStyle} className=" max-[767px]:!bg-none ">
                 <Hero />
             </div>
             <Features />
