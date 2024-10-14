@@ -1,5 +1,7 @@
 import { FeaturesData } from '../../mockUpData/data.ts'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { SlideLeft } from '../../utility/animation.ts'
 
 const Features = () => {
     return (
@@ -10,7 +12,13 @@ const Features = () => {
             <div className="grid max-w-fit mx-auto min-[767px]:grid-cols-2 lg:grid-cols-4 gap-6">
                 {FeaturesData.map((item) => {
                     return (
-                        <div className="space-y-2 p-6 bg-[#fbfbfb] grid rounded-lg shadow-lg">
+                        <motion.div
+                            variants={SlideLeft(item.delay)}
+                            key={item.id}
+                            initial="hidden"
+                            whileInView="visible"
+                            className="space-y-2 p-6 bg-[#fbfbfb] grid rounded-lg shadow-lg"
+                        >
                             <div className="md:mx-auto">
                                 {/* Render icon as a JSX component */}
                                 {item.icon && (
@@ -32,7 +40,7 @@ const Features = () => {
                                     )}
                                 </button>
                             </Link>
-                        </div>
+                        </motion.div>
                     )
                 })}
             </div>

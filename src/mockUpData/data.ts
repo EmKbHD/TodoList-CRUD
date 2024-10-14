@@ -40,7 +40,7 @@ export const FeaturesData = [
    link:"/",
    icon:ChevronRightIcon,
   },
-  delay:0.9,
+  delay:0.5,
  },
  {
   id:2,
@@ -53,7 +53,7 @@ export const FeaturesData = [
    link:"/",
    icon:ChevronRightIcon,
   },
-  delay:0.9,
+  delay:0.7,
  },
  {
   id:3,
@@ -66,7 +66,7 @@ export const FeaturesData = [
    link:"/",
    icon:ChevronRightIcon,
   },
-  delay:0.9,
+  delay:0.8,
  },
  {
   id:4,
