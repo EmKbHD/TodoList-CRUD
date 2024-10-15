@@ -5,7 +5,7 @@ import { SlideLeft } from '../../utility/animation.ts'
 
 const Features = () => {
     return (
-        <div className="container my-[64px]">
+        <div className=" border container my-[64px]">
             <h2 className="text-3xl font-medium text-center my-[32px] font-suse ">
                 Features
             </h2>
