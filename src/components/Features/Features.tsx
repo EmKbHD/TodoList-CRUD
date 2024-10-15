@@ -5,11 +5,11 @@ import { SlideLeft } from '../../utility/animation.ts'
 
 const Features = () => {
     return (
-        <div className=" border container my-[64px]">
-            <h2 className="text-3xl font-medium text-center my-[32px] font-suse ">
+        <div className=" container py-[4rem] my-auto">
+            <h2 className=" text-3xl font-medium pb-[1rem] text-left md:text-center font-suse ">
                 Features
             </h2>
-            <div className="grid max-w-fit mx-auto min-[767px]:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className=" grid max-w-fit mx-auto md:mt-4 min-[767px]:grid-cols-2 lg:grid-cols-4 gap-6">
                 {FeaturesData.map((item) => {
                     return (
                         <motion.div
@@ -17,7 +17,7 @@ const Features = () => {
                             key={item.id}
                             initial="hidden"
                             whileInView="visible"
-                            className="space-y-2 p-6 bg-[#fbfbfb] grid rounded-lg shadow-lg"
+                            className="space-y-2 px-6 py-8 bg-[#fbfbfb] grid rounded-lg shadow-lg"
                         >
                             <div className="md:mx-auto">
                                 {/* Render icon as a JSX component */}
