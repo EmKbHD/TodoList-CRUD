@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <>
             <section>
-                <div className=" container py-[2rem] grid align-items-center grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
+                <div className=" container grid place-content-center grid-cols-1 md:grid-cols-2 min-h-[568px] relative">
                     {/* Company information */}
                     <div className=" flex flex-col justify-center ">
                         <div className=" space-y-6 ">
@@ -59,14 +59,14 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Hero image */}
-                    <div className=" order-first md:order-none flex justify-center items-center md:justify-normal ">
+                    <div className=" flex justify-center items-center order-first md:justify-normal md:order-none ">
                         <motion.img
                             variants={SlideLeft(1)}
                             animate="visible"
                             initial={{ opacity: 0, x: 100 }}
                             src={HeroImage}
                             alt="VOTE IMAGE"
-                            className="w-[21.875rem] h-4/5 md:w-[34.375rem] xl:w-[43.75rem] drop-shadow "
+                            className="w-[21.875rem] h-2/3 md:w-[34.375rem] xl:w-[43.75rem] drop-shadow "
                         />
                     </div>
                 </div>

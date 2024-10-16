@@ -1,8 +1,12 @@
 const WhatIsEVoty = () => {
     return (
         <div className="container bg-[#EDF6FF] md:rounded-lg py-8 ">
-            <h2 className=" text-3xl text-primary py-4 font-medium text-center font-suse ">
-                What Is <span className="text-secondary">e</span>Voty ?
+            <h2 className=" text-3xl  py-4 font-medium text-center font-suse ">
+                What Is{' '}
+                <strong className="text-primary">
+                    <span className="text-secondary">e</span>Voty{' '}
+                </strong>
+                ?
             </h2>
             <div className=" text-md md:mx-auto ">
                 <p className=" text-xl text-center font-medium text-primary md:mx-auto ">

@@ -7,7 +7,7 @@ const Features = () => {
     return (
         <div className=" container py-[4rem] my-auto">
             <h2 className=" text-3xl font-medium pb-[1rem] text-left md:text-center font-suse ">
-                Features
+                App Features
             </h2>
             <div className=" grid max-w-fit mx-auto md:mt-4 min-[767px]:grid-cols-2 lg:grid-cols-4 gap-6">
                 {FeaturesData.map((item) => {
@@ -22,7 +22,7 @@ const Features = () => {
                             <div className="md:mx-auto">
                                 {/* Render icon as a JSX component */}
                                 {item.icon && (
-                                    <item.icon className="w-16 h-16 text-secondary/80" />
+                                    <item.icon className="w-16 aspect-square text-secondary/80" />
                                 )}
                             </div>
                             <div className="text-2xl font-semibold md:mx-auto">
