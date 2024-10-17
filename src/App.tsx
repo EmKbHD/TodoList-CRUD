@@ -3,6 +3,7 @@ import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import WhatIsEVoty from './components/WhatIsEVoty/WhatIsEVoty'
 import BgImage from './assets/bg.png'
+import Banners from './components/Banners/Banners'
 
 const bgStyle = {
     backgroundImage: `url(${BgImage})`,
@@ -20,6 +21,7 @@ function App() {
             </div>
             <Features />
             <WhatIsEVoty />
+            <Banners />
         </div>
     )
 }

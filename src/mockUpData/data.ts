@@ -3,6 +3,8 @@ import {ShieldCheckIcon} from '@heroicons/react/24/solid'
 import {ClockIcon} from '@heroicons/react/24/solid'
 import {NewspaperIcon} from '@heroicons/react/24/solid'
 import {ChevronRightIcon} from '@heroicons/react/24/solid'
+import Dashboard from "../assets/admin-dashboard.png"
+import carteVote from "../assets/carte-de-vote.png"
 
 export const NavbarMenu = [
  {
@@ -81,4 +83,30 @@ export const FeaturesData = [
   },
   delay:0.9,
  },
+]
+
+export const BannersData = [{
+  id:1,
+  title:"Vote Dashboard Data",
+  desc:"Get the real-time results of the elections.",
+  img_url:Dashboard,
+  button:{
+   desc:"Read on",
+   link:"#",
+   icon:ChevronRightIcon,
+  },
+  delay:0.9,
+},
+{
+  id:2,
+  title:"Vote cards page",
+  desc:"Card or bulletin board of candidates and button to initiate the vote.",
+  img_url:carteVote,
+  button:{
+   desc:"Read on",
+   link:"#",
+   icon:ChevronRightIcon,
+  },
+  delay:0.9,
+},
 ]

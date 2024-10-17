@@ -37,7 +37,7 @@ const Navbar = () => {
                 {/* CTA button area for sign up or login */}
                 <div className=" font-semibold md:block">
                     <button
-                        className="btn px-4 py-1.5 mr-2 border-[1px] border-secondary text-secondary hover:bg-secondary hover:text-white duration-200 rounded-md cursor-pointer"
+                        className="btn px-4 py-1.5 mr-3 border-[1px] border-secondary text-secondary hover:bg-secondary hover:text-white duration-200 rounded-md cursor-pointer"
                         type="button"
                     >
                         Sign up
