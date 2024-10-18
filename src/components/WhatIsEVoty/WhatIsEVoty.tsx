@@ -2,7 +2,7 @@ const WhatIsEVoty = () => {
     return (
         <div className="bg-[#DBDDDF]">
             <div className=" container  md:rounded-lg py-16 ">
-                <h2 className=" text-3xl font-medium text-center font-suse ">
+                <h2 className=" text-3xl font-semibold text-center ">
                     What is{' '}
                     <strong className="text-primary">
                         <span className="text-secondary">e</span>Voty{' '}
