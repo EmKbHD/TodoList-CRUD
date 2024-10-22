@@ -2,7 +2,7 @@ import Features from './components/Features/Features'
 import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import WhatIsEVoty from './components/WhatIsEVoty/WhatIsEVoty'
-import BgImage from './assets/bg-red.png'
+import BgImage from './assets/bg-red-500.png'
 import Banners from './components/Banners/Banners'
 
 const bgStyle = {

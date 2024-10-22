@@ -30,7 +30,7 @@ const Hero = () => {
                                 className=" md:text-xl text-gray-700 xl:max-w-[500px] "
                             >
                                 <span className="text-xl font-semibold  ">
-                                    Easily Create your elections and pool
+                                    Easily Create Elections and Pools
                                 </span>
 
                                 <ol className="mt-2 text-lg list-disc ml-5 ">
