@@ -10,12 +10,12 @@ const Hero = () => {
                 <div className=" container grid place-content-center grid-cols-1 md:grid-cols-2 min-h-[568px] relative">
                     {/* Company information */}
                     <div className=" flex flex-col justify-center ">
-                        <div className=" space-y-6 ">
+                        <div className=" space-y-8 ">
                             <motion.h1
                                 variants={SlideRight(0.6)}
                                 initial="hidden"
                                 animate="visible"
-                                className="text-4xl text-primary lg:text-5xl font-suse font-bold leading-tight capitalize"
+                                className="text-4xl text-primary lg:text-7xl font-suse font-bold leading-tight capitalize"
                             >
                                 Vote anywhere <br />{' '}
                                 <span className="text-secondary/80">
@@ -27,7 +27,7 @@ const Hero = () => {
                                 variants={SlideRight(1.2)}
                                 initial="hidden"
                                 animate="visible"
-                                className="mt-4 md:text-xl text-gray-700 xl:max-w-[500px] "
+                                className=" md:text-xl text-gray-700 xl:max-w-[500px] "
                             >
                                 <span className="text-xl font-semibold  ">
                                     Easily Create your elections and pool
@@ -46,7 +46,7 @@ const Hero = () => {
                                 variants={SlideRight(1.5)}
                                 initial="hidden"
                                 animate="visible"
-                                className="md:max-w-[400px] font-semibold flex gap-4 md:justify-start !mt-4"
+                                className="md:max-w-[400px] font-semibold flex gap-4 md:justify-start"
                             >
                                 <button className=" max-w-[190px] primary-btn grow flex justify-center items-center ">
                                     Get started

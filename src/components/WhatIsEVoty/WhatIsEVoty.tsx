@@ -1,6 +1,6 @@
 const WhatIsEVoty = () => {
     return (
-        <div className="bg-[#DBDDDF]">
+        <div className="bg-[#F1F4F5]">
             <div className=" container  md:rounded-lg py-16 ">
                 <h2 className=" text-3xl font-semibold text-center ">
                     What is{' '}

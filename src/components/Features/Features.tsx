@@ -17,7 +17,7 @@ const Features = () => {
                             key={item.id}
                             initial="hidden"
                             whileInView="visible"
-                            className="space-y-2 px-6 py-8 bg-[#fbfbfb] grid rounded-lg shadow-lg"
+                            className="space-y-2 px-6 py-8 bg-[#F1F4F5] grid rounded-lg hover:shadow-lg"
                         >
                             <div className="md:mx-auto">
                                 {/* Render icon as a JSX component */}
