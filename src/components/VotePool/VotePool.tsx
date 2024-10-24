@@ -1,11 +1,12 @@
 const VotePool = () => {
     return (
-        <div className=" bg-red-50 flex justify-center items-center">
-            <div className=" container py-14 flex flex-col justify-center ">
-                <h2 className=" text-center font-bold text-2xl">
+        <div className=" bg-red-50/50 flex justify-center items-center">
+            <div className=" container py-8 md:py-16 flex flex-col justify-center ">
+                <h2 className=" text-center font-bold text-2xl md:text-4xl">
                     Votes and Pools are{' '}
                     <span className="text-red-500">
-                        easy to use and secured
+                        easy to
+                        <br /> use and secured
                     </span>
                 </h2>
                 <div className=" flex justify-center pt-8">

@@ -2,19 +2,19 @@ import { BannersData } from '../../mockUpData/data'
 
 const Banners = () => {
     return (
-        <div className="container">
-            <div className=" grid grid-cols-1 space-y-7 md:space-y-0 py-14">
-                <h2 className="text-3xl font-semibold text-center ">
+        <div className=" container">
+            <div className=" grid grid-cols-1 space-y-6 md:space-y-0 pt-8 md:py-16">
+                <h2 className=" text-3xl font-semibold text-center md:py-4 ">
                     How{' '}
                     <strong className="text-primary">
                         <span className="text-secondary">e</span>Voty{' '}
                     </strong>{' '}
                     works
                 </h2>
-                <span className="text-lg text-gray-600 font-bold py-4">
+                <span className=" text-lg text-gray-600 font-bold md:py-4">
                     Why create your vote with us ?
                 </span>
-                <p className="mt-4 text-lg text-gray-600">
+                <p className=" text-lg text-gray-600">
                     Let's start by identifying what the PM is not. The PM is not
                     the owner of the project. The PM is the sponsor, i.e. the
                     person who appoints the PM and makes the commitment. eVoty
