@@ -9,7 +9,7 @@ const WhatIsEVoty = () => {
                     </strong>
                     ?
                 </h2>
-                <div className=" text-base mt-4 md:mx-auto ">
+                <div className=" text-base mt-4 md:px-8 lg:px-20 md:mx-auto ">
                     <p className=" text-xl text-center font-medium text-primary md:mx-auto ">
                         eVoty is a community-driven, open-source, and
                         transparent voting system designed to democratize voting

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavbarMenu } from '../../mockUpData/data.ts'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 import MobileMenu from './MobileMenu'
+import Logo from '../../assets/eVoty.svg'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -9,17 +10,16 @@ const Navbar = () => {
     return (
         <>
             <nav className=" container flex justify-between items-center py-5 ">
-                {/* <div className="container flex justify-between items-center py-5"> */}
                 {/* logo area */}
-                <div className="font-suse font-bold text-3xl flex items-center gap-2 hover:opacity-[.9]">
-                    {/* <VoteIcon /> */}
+                <div className=" font-suse font-bold text-3xl flex items-center gap-2 hover:opacity-[.9]">
                     <a href="/" className="text-secondary">
-                        e<span className="text-[#173C6C]">Voty</span>
+                        {/* e<span className="text-[#173C6C]">Voty</span> */}
+                        <img src={Logo} alt="eVoty Logo" className="h-16" />
                     </a>
                 </div>
                 {/* menu items area */}
                 <div className="hidden md:block">
-                    <ul className="flex items-center gap-7 text-gray-600">
+                    <ul className="flex items-center gap-3 lg:gap-7 text-gray-600">
                         {NavbarMenu.map((item) => {
                             return (
                                 <li key={item.id}>

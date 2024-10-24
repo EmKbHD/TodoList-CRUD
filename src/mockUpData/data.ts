@@ -88,7 +88,7 @@ export const FeaturesData = [
 export const BannersData = [{
   id:1,
   title:"Vote Dashboard Data",
-  description:"Get the real-time results of the elections...",
+  description:"Get the real-time results of the elections...Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin.",
   img_url:Dashboard,
   button:{
    desc:"Read on",
@@ -100,7 +100,7 @@ export const BannersData = [{
 {
   id:2,
   title:"Cards vote page",
-  description:"Card or bulletin board of candidates and button to initiate the vote...",
+  description:"Card or bulletin board of candidates and button to initiate the vote...Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl.",
   img_url:carteVote,
   button:{
    desc:"Read on",

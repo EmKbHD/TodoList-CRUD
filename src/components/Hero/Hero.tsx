@@ -15,7 +15,7 @@ const Hero = () => {
                                 variants={SlideRight(0.6)}
                                 initial="hidden"
                                 animate="visible"
-                                className="text-4xl text-primary lg:text-7xl font-suse font-bold leading-tight capitalize"
+                                className=" text-4xl text-primary sm:text-5xl lg:text-7xl font-suse font-bold leading-tight capitalize"
                             >
                                 Vote anywhere <br />{' '}
                                 <span className="text-secondary/80">
