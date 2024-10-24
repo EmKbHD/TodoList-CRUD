@@ -30,14 +30,14 @@ const Banners = () => {
                             <div
                                 className={
                                     item.id === 2
-                                        ? 'p-2 order-none drop-shadow md:order-2'
+                                        ? 'p-2 order-none drop-shadow md:order-2 '
                                         : 'p-2 drop-shadow '
                                 }
                             >
                                 <img
                                     src={item.img_url}
                                     alt="dashboard image"
-                                    className="object-cover min-w-[360px]"
+                                    className="object-cover min-w-[360px] "
                                 />
                             </div>
                             {/* banner text section */}

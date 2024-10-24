@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import WhatIsEVoty from './components/WhatIsEVoty/WhatIsEVoty'
 import BgImage from './assets/bg-red-500.png'
 import Banners from './components/Banners/Banners'
+import VotePool from './components/VotePool/VotePool'
 
 const bgStyle = {
     backgroundImage: `url(${BgImage})`,
@@ -22,6 +23,7 @@ function App() {
             <Features />
             <WhatIsEVoty />
             <Banners />
+            <VotePool />
         </div>
     )
 }

@@ -100,7 +100,7 @@ export const BannersData = [{
 {
   id:2,
   title:"Cards vote page",
-  description:"Card or bulletin board of candidates and button to initiate the vote...Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl.",
+  description:"Card or bulletin board of candidates and button to initiate the vote...Aliquam convallis sollicitudin purus. Praesent aliquam, enim.",
   img_url:carteVote,
   button:{
    desc:"Read on",
