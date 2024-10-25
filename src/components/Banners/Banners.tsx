@@ -1,4 +1,6 @@
 import { BannersData } from '../../mockUpData/data'
+import { motion } from 'framer-motion'
+import { SlideUp } from '../../utility/animation'
 
 const Banners = () => {
     return (
@@ -34,7 +36,14 @@ const Banners = () => {
                                         : 'p-2 drop-shadow '
                                 }
                             >
-                                <img
+                                <motion.img
+                                    initial={{ opacity: 0, scale: 0.5 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 100,
+                                        delay: 0.2,
+                                    }}
                                     src={item.img_url}
                                     alt="dashboard image"
                                     className="object-cover min-w-[360px] "
@@ -55,13 +64,29 @@ const Banners = () => {
                                             : ' py-4 '
                                     }
                                 >
-                                    <h3 className="text-2xl space-y-4 font-semibold text-gray-800">
+                                    <motion.h3
+                                        variants={SlideUp(0.5)}
+                                        initial="hidden"
+                                        whileInView={'visible'}
+                                        viewport={{ once: true }}
+                                        className="text-2xl space-y-4 font-semibold text-gray-800"
+                                    >
                                         {item.title}
-                                    </h3>
-                                    <p className="max-w-sm lg:max-w-lg text-lg text-gray-600 my-2 lg:my-4 ">
+                                    </motion.h3>
+                                    <motion.p
+                                        variants={SlideUp(0.7)}
+                                        initial="hidden"
+                                        whileInView={'visible'}
+                                        viewport={{ once: true }}
+                                        className="max-w-sm lg:max-w-lg text-lg text-gray-600 my-2 lg:my-4 "
+                                    >
                                         {item.description}
-                                    </p>
-                                    <p
+                                    </motion.p>
+                                    <motion.p
+                                        variants={SlideUp(0.9)}
+                                        initial="hidden"
+                                        whileInView={'visible'}
+                                        viewport={{ once: true }}
                                         className={
                                             item.id === 2 ? 'mt-8' : 'mt-4'
                                         }
@@ -73,7 +98,7 @@ const Banners = () => {
                                         >
                                             {item.button.desc}
                                         </a>
-                                    </p>
+                                    </motion.p>
                                 </div>
                             </div>
                         </section>
