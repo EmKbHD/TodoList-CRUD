@@ -5,6 +5,9 @@ import {NewspaperIcon} from '@heroicons/react/24/solid'
 import {ChevronRightIcon} from '@heroicons/react/24/solid'
 import Dashboard from "../assets/admin-dashboard.png"
 import carteVote from "../assets/carte-de-vote.png"
+import photo1 from "../assets/photo-1.png"
+import photo2 from "../assets/photo-2.png"
+import photo3 from "../assets/photo-3.png"
 
 export const NavbarMenu = [
  {
@@ -108,5 +111,28 @@ export const BannersData = [{
    icon:ChevronRightIcon,
   },
   delay:0.9,
+},
+]
+
+export const TestimonialsData = [{
+  id:1,
+  name:"John Doe",
+  role:"CEO / Company",
+  desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem, officiis, et, repellat repudiandae quae fugit nemo tempore rerum quas laboriosam.",
+  img:photo1,
+},
+{
+  id:2,
+  name:"Bruce Lee",
+  role:"Engineer / Company",
+  desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem, officiis, et, repellat repudiandae quae fugit nemo tempore rerum quas laboriosam.",
+  img:photo2, 
+},
+{
+  id:3,
+  name:"Kali Mwendo",
+  role:"Designer / Company",
+  desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem, officiis, et, repellat repudiandae quae fugit nemo tempore rerum quas laboriosam.",
+  img:photo3,
 },
 ]
