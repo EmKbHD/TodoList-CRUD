@@ -1,10 +1,13 @@
+// Features import 
 import {	PresentationChartLineIcon} from '@heroicons/react/24/solid'
 import {ShieldCheckIcon} from '@heroicons/react/24/solid'
 import {ClockIcon} from '@heroicons/react/24/solid'
 import {NewspaperIcon} from '@heroicons/react/24/solid'
 import {ChevronRightIcon} from '@heroicons/react/24/solid'
+// banners import
 import Dashboard from "../assets/admin-dashboard.png"
 import carteVote from "../assets/carte-de-vote.png"
+// testimonials import 
 import photo1 from "../assets/photo-1.png"
 import photo2 from "../assets/photo-2.png"
 import photo3 from "../assets/photo-3.png"

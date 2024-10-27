@@ -6,6 +6,7 @@ import BgImage from './assets/bg-red-500.png'
 import Banners from './components/Banners/Banners'
 import VotePool from './components/VotePool/VotePool'
 import Testimonials from './components/Testimonials/Testimonials'
+import Footer from './components/Footer/Footer'
 
 const bgStyle = {
     backgroundImage: `url(${BgImage})`,
@@ -26,6 +27,7 @@ function App() {
             <Banners />
             <VotePool />
             <Testimonials />
+            <Footer />
         </div>
     )
 }
