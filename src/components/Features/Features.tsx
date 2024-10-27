@@ -19,7 +19,7 @@ const Features = () => {
                             whileInView="visible"
                             className="space-y-2 px-6 py-8 bg-[#F1F4F5] grid rounded-lg hover:shadow-lg"
                         >
-                            <div className="md:mx-auto">
+                            <div className="md:mx-auto mb-4 md:mb-8">
                                 {/* Render icon as a JSX component */}
                                 {item.icon && (
                                     <item.icon className="w-16 aspect-square text-secondary/80" />

@@ -120,13 +120,15 @@ export const TestimonialsData = [{
   role:"CEO / Company",
   desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem, officiis, et, repellat repudiandae quae fugit nemo tempore rerum quas laboriosam.",
   img:photo1,
+  rating:'⭐⭐⭐⭐⭐',
 },
 {
   id:2,
   name:"Bruce Lee",
   role:"Engineer / Company",
   desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem, officiis, et, repellat repudiandae quae fugit nemo tempore rerum quas laboriosam.",
-  img:photo2, 
+  img:photo2,
+  rating:'⭐⭐⭐⭐' 
 },
 {
   id:3,
@@ -134,5 +136,6 @@ export const TestimonialsData = [{
   role:"Designer / Company",
   desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem, officiis, et, repellat repudiandae quae fugit nemo tempore rerum quas laboriosam.",
   img:photo3,
+  rating:'⭐⭐⭐⭐⭐'
 },
 ]

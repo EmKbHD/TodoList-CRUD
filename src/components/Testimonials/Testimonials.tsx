@@ -49,13 +49,10 @@ const Testimonials = () => {
                     <br /> Saying about us ?
                 </h2>
                 {/* testimonials customers card start here */}
-                <div>
-                    <Slider {...settingCarousel}>
-                        {TestimonialsData.map((item) => (
-                            <div
-                                key={item.id}
-                                className=" rounded-lg p-4 mr-2 my-6"
-                            >
+                <Slider {...settingCarousel}>
+                    {TestimonialsData.map((item) => (
+                        <div key={item.id} className=" my-6">
+                            <div className="flex flex-col mx-2 rounded-lg shadow-lg bg-primary/5 p-4">
                                 <div className=" flex mb-2">
                                     <img
                                         src={item.img}
@@ -67,14 +64,16 @@ const Testimonials = () => {
                                         <p className="text-sm">{item.role}</p>
                                     </div>
                                 </div>
-                                <div>
-                                    <p>{item.desc}</p>
+                                <div className="py-2 space-y-4">
+                                    <p className="text-sm text-gray-600">
+                                        {item.desc}
+                                    </p>
+                                    <p>{item.rating}</p>
                                 </div>
-                                <p>⭐⭐⭐⭐⭐</p>
                             </div>
-                        ))}
-                    </Slider>
-                </div>
+                        </div>
+                    ))}
+                </Slider>
             </div>
         </div>
     )
