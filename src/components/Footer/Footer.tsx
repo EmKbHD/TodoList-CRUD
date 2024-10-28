@@ -58,7 +58,7 @@ const Footer = () => {
                             elit. In numquam distinctio aperiam amet culpa?
                         </p>
                         {/* social media icons  */}
-                        <div className=" flex p-2 items-center justify-start gap-2 mt-2 md:mt-0">
+                        <div className=" flex items-center justify-start gap-3 mt-2 md:mt-0">
                             <a href="#">
                                 <SocialIcon
                                     url="https://www.facebook.com/"
@@ -90,7 +90,7 @@ const Footer = () => {
                     {/* links start here */}
                     <div className=" grid grid-cols-2 md:grid-cols-3 md:col-span-3 md:ml-14">
                         <div className=" py-8 px-4">
-                            <h2 className="text-xl mb-5 font-bold">
+                            <h2 className="text-lg md:text-xl mb-5 font-bold">
                                 Important Links
                             </h2>
                             <ul className="flex flex-col gap-3">
