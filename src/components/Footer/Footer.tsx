@@ -146,6 +146,15 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                {/* copy right area  */}
+                <div className="mt-8">
+                    <div className="text-center py-6 border-t-2 border-gray-300/10">
+                        <span className="text-sm text-gray-300 opacity-70">
+                            &copy; Copyright 2024 Afritic Group. All rights
+                            reserved.
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     )
