@@ -21,3 +21,23 @@
         filter: drop-shadow(-6px 8px 15px rgba(0, 0, 0, 0.2));
     }
 }
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #1e7b48;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}

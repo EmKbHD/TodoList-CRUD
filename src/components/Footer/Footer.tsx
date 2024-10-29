@@ -109,7 +109,9 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className=" py-8 px-4">
-                            <h2 className="text-xl mb-5 font-bold">Company</h2>
+                            <h2 className="text-lg md:text-xl mb-5 font-bold">
+                                Company
+                            </h2>
                             <ul className="flex flex-col gap-3">
                                 {CompanyLinks.map((item) => {
                                     return (
@@ -126,7 +128,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className=" py-8 px-4">
-                            <h2 className="text-xl mb-5 font-bold">
+                            <h2 className="text-lg md:text-xl mb-5 font-bold">
                                 Resources
                             </h2>
                             <ul className="flex flex-col gap-3">
@@ -150,8 +152,8 @@ const Footer = () => {
                 <div className="mt-8">
                     <div className="text-center py-6 border-t-2 border-gray-300/10">
                         <span className="text-sm text-gray-300 opacity-70">
-                            &copy; Copyright 2024 Afritic Group. All rights
-                            reserved.
+                            &copy; Copyright 2024 &nbsp; Afritic Group. All
+                            rights reserved.
                         </span>
                     </div>
                 </div>

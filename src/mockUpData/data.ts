@@ -142,3 +142,109 @@ export const TestimonialsData = [{
   rating:'⭐⭐⭐⭐⭐'
 },
 ]
+
+//Pricing Plans data
+
+export const planMonthly = [
+    {
+        category: "Free",
+        price: "0$ / Month",
+        features: [
+            "Créer 3 Votes",
+            "5 candidats",
+            "50 électeurs",
+            "Créer 2 Sondages",
+            "Sondage Choix unique",
+            "Sondage par Question/Réponse",
+            "1 essai gratuit forfait Pro (30jrs)"
+        ],
+        buttonText: "Commencez"
+    },
+    {
+        category: "Professional",
+        price: "13$ / Mois",
+        features: [
+            "Créer 20 Votes",
+            "7 candidats",
+            "Illimité électeurs",
+            "Créer 4 Sondages",
+            "Sondage Choix unique",
+            "Sondage par Question/Réponse",
+            "Sondage par Etoile",
+            "Sondage par Emojis",
+            "1 essai gratuit du forfait Premium"
+        ],
+        buttonText: "Acheter Maintenant",
+        recommended: true
+    },
+    {
+        category: "Premium",
+        price: "20$ / Mois",
+        features: [
+            "Illimité de vote",
+            "Illimité candidats",
+            "Illimité électeurs",
+            "Illimité de sondage",
+            "Sondage Choix unique",
+            "Sondage par Question/Réponse",
+            "Sondage par graphique",
+            "Sondage par emoji",
+            "Sondage par notation (0-10)",
+            "Sondage par Image",
+            "Sondage par Etoile"
+        ],
+        buttonText: "Acheter Maintenant"
+    }
+];
+
+export const planAnnual = [
+    {
+        title: "Free",
+        price: "0$ / Year",
+        features: [
+            "Créer 3 Votes",
+            "5 candidats",
+            "50 électeurs",
+            "Créer 2 Sondages",
+            "Sondage Choix unique",
+            "Sondage par Question/Réponse",
+            "1 essai gratuit forfait Pro (30jrs)"
+        ],
+        buttonText: "Try"
+    },
+    {
+        title: "Professional",
+        price: "120$ / Year",
+        features: [
+            "Créer 20 Votes",
+            "7 candidats",
+            "Illimité électeurs",
+            "Créer 4 Sondages",
+            "Sondage Choix unique",
+            "Sondage par Question/Réponse",
+            "Sondage par Etoile",
+            "Sondage par Emojis",
+            "1 essai gratuit du forfait Premium"
+        ],
+        buttonText: "Buy Now",
+        recommended: true
+    },
+    {
+        title: "Premium",
+        price: "200$ / Year",
+        features: [
+            "Illimité de vote",
+            "Illimité candidats",
+            "Illimité électeurs",
+            "Illimité de sondage",
+            "Sondage Choix unique",
+            "Sondage par Question/Réponse",
+            "Sondage par graphique",
+            "Sondage par emoji",
+            "Sondage par notation (0-10)",
+            "Sondage par Image",
+            "Sondage par Etoile"
+        ],
+        buttonText: "Buy Now"
+    }
+];
