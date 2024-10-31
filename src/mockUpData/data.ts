@@ -1,13 +1,13 @@
-// Features import 
+//import Features
 import {	PresentationChartLineIcon} from '@heroicons/react/24/solid'
 import {ShieldCheckIcon} from '@heroicons/react/24/solid'
 import {ClockIcon} from '@heroicons/react/24/solid'
 import {NewspaperIcon} from '@heroicons/react/24/solid'
 import {ChevronRightIcon} from '@heroicons/react/24/solid'
-// banners import
+//import banners
 import Dashboard from "../assets/admin-dashboard.png"
 import carteVote from "../assets/carte-de-vote.png"
-// testimonials import 
+//import testimonials
 import photo1 from "../assets/photo-1.png"
 import photo2 from "../assets/photo-2.png"
 import photo3 from "../assets/photo-3.png"
@@ -144,106 +144,111 @@ export const TestimonialsData = [{
 ]
 
 //Pricing Plans data
-
 export const planMonthly = [
     {
         category: "Free",
-        price: "0$ / Month",
+        price: "$0 / Mo",
+        detail: "Best for solo creator",
         features: [
-            "Créer 3 Votes",
-            "5 candidats",
-            "50 électeurs",
-            "Créer 2 Sondages",
-            "Sondage Choix unique",
-            "Sondage par Question/Réponse",
-            "1 essai gratuit forfait Pro (30jrs)"
+            "Create 3 Votes",
+            "5 candidates",
+            "50 voters",
+            "Create 2 Surveys",
+            "Survey Unique choice",
+            "Question & Answer poll",
+            "1 free trial Pro package (30 days)"
         ],
-        buttonText: "Commencez"
+        buttonText: "Get Started"
     },
     {
         category: "Professional",
-        price: "13$ / Mois",
+        price: "$13 / Mo",
+        detail: "Most popular plan",
         features: [
-            "Créer 20 Votes",
-            "7 candidats",
-            "Illimité électeurs",
-            "Créer 4 Sondages",
-            "Sondage Choix unique",
-            "Sondage par Question/Réponse",
-            "Sondage par Etoile",
-            "Sondage par Emojis",
-            "1 essai gratuit du forfait Premium"
+            "Create 20 Votes",
+            "7 candidates",
+            "Unlimited voters",
+            "Create 4 Surveys",
+            "Single choice survey",
+            "Question & Answer poll",
+            "Poll by stars",
+            "Emojis poll",
+            "1 free trial of the Premium package"
         ],
-        buttonText: "Acheter Maintenant",
+        buttonText: "By Now",
         recommended: true
     },
     {
         category: "Premium",
-        price: "20$ / Mois",
+        price: "$20 / Mo",
+        detail: "Exclusive plan for teams",
         features: [
-            "Illimité de vote",
-            "Illimité candidats",
-            "Illimité électeurs",
-            "Illimité de sondage",
-            "Sondage Choix unique",
-            "Sondage par Question/Réponse",
-            "Sondage par graphique",
-            "Sondage par emoji",
-            "Sondage par notation (0-10)",
-            "Sondage par Image",
-            "Sondage par Etoile"
+            "Unlimited voting",
+            "Unlimited candidates",
+            "Unlimited voters",
+            "Unlimited surveys",
+            "Single choice survey",
+            "Question & Answer poll",
+            "Graphic poll",
+            "Poll by emoji",
+            "Rating survey (0-10)",
+            "Poll by Image",
+            "Poll by stars"
         ],
-        buttonText: "Acheter Maintenant"
+        buttonText: "By Now"
     }
 ];
 
 export const planAnnual = [
     {
-        title: "Free",
-        price: "0$ / Year",
+        category: "Free",
+        price: "$0 / Year",
+        detail: "Best for solo creator",
         features: [
-            "Créer 3 Votes",
-            "5 candidats",
-            "50 électeurs",
-            "Créer 2 Sondages",
-            "Sondage Choix unique",
-            "Sondage par Question/Réponse",
-            "1 essai gratuit forfait Pro (30jrs)"
+            "Create 3 Votes",
+            "5 candidates",
+            "50 voters",
+            "Create 2 Surveys",
+            "Survey Unique choice",
+            "Question & Answer poll",
+            "1 free trial Pro package (30 days)"
         ],
         buttonText: "Try"
     },
     {
-        title: "Professional",
-        price: "120$ / Year",
+        category: "Professional",
+        price: "$120 / Year",
+        detail: "Most popular plan",
         features: [
-            "Créer 20 Votes",
-            "7 candidats",
-            "Illimité électeurs",
-            "Créer 4 Sondages",
-            "Sondage Choix unique",
-            "Sondage par Question/Réponse",
-            "Sondage par Etoile",
-            "Sondage par Emojis",
-            "1 essai gratuit du forfait Premium"
+            "Create 20 Votes",
+            "7 candidates",
+            "Unlimited voters",
+            "Create 4 Surveys",
+            "Single choice survey",
+            "Question & Answer poll",
+            "Poll by stars",
+            "Emojis poll",
+            "1 free trial of the Premium package"
         ],
-        buttonText: "Buy Now",
+        buttonText: "By Now",
         recommended: true
     },
     {
-        title: "Premium",
-        price: "200$ / Year",
+        category: "Premium",
+        price: "$200 / Year",
+        detail: "Exclusive plan for teams",
         features: [
-            "Illimité de vote",
-            "Illimité candidats",
-            "Illimité électeurs",
-            "Illimité de sondage",
-            "Sondage Choix unique",
-            "Sondage par Question/Réponse",
-            "Sondage par graphique",
-            "Sondage par emoji",
-            "Sondage par notation (0-10)",
-            "Sondage par Image",
-            "Sondage par Etoile"
+            "Unlimited voting",
+            "Unlimited candidates",
+            "Unlimited voters",
+            "Unlimited surveys",
+            "Single choice survey",
+            "Question & Answer poll",
+            "Graphic poll",
+            "Poll by emoji",
+            "Rating survey (0-10)",
+            "Poll by Image",
+            "Poll by Etoile"
         ],
         buttonText: "Buy Now"
     }

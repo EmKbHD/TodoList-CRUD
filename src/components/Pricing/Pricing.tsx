@@ -1,18 +1,21 @@
 import { useState } from 'react'
 import PricingCard from './PricingCard'
-import { planMonthly } from '../../mockUpData/data'
+import { planAnnual, planMonthly } from '../../mockUpData/data'
 
 const Pricing: React.FC = () => {
     const [monthly, setIsMonthly] = useState(false)
     const handleToggle = () => {
-        setIsMonthly(!monthly)
+        setIsMonthly((monthly) => !monthly)
     }
+
+    // Selection of the plans based on the toggle state
+    const plans = monthly ? planMonthly : planAnnual
 
     return (
         <div className="container">
             <div className="py-8 md:py-16 space-y-6">
                 <h2 className="text-left md:text-center mb-10 text-3xl md:text-4xl font-bold">
-                    Our Pricing Plan
+                    Choose your Pricing Plan
                 </h2>
                 <div className="font-semibold flex items-center justify-center gap-4 mb-5  ">
                     <span
@@ -23,7 +26,7 @@ const Pricing: React.FC = () => {
                     <label className=" relative w-[50px] h-[24px]">
                         <input
                             type="checkbox"
-                            checked={monthly}
+                            checked={!monthly}
                             onChange={handleToggle}
                             className="opacity-0 checked:bg-[#052D52] "
                         />
@@ -42,13 +45,14 @@ const Pricing: React.FC = () => {
                         </small>
                     </span>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {planMonthly.map((data) => {
+                <div className="border grid grid-cols-1 place-items-center md:grid-cols-3 gap-4">
+                    {plans.map((data) => {
                         return (
                             <PricingCard
                                 key={data.category}
                                 category={data.category}
                                 price={data.price}
+                                detail={data.detail}
                                 features={data.features}
                                 buttonText={data.buttonText}
                                 recommended={data.recommended}
@@ -62,18 +66,3 @@ const Pricing: React.FC = () => {
 }
 
 export default Pricing
-
-{
-    /* <div className="flex items-center">
-    <input
-        type="checkbox"
-        id="toggle"
-        checked={monthly}
-        onChange={handleToggle}
-        className="sr-only peer"
-    />
-    <div className="w-14 h-7 bg-gray-300 rounded-full peer-checked:bg-blue-500 relative transition-colors duration-300">
-        <div className="w-6 h-6 bg-white rounded-full absolute left-1 top-0.5 peer-checked:translate-x-full transform transition-transform duration-300"></div>
-    </div>
-</div> */
-}
