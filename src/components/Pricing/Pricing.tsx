@@ -3,7 +3,8 @@ import PricingCard from './PricingCard'
 import { planAnnual, planMonthly } from '../../mockUpData/data'
 
 const Pricing: React.FC = () => {
-    const [monthly, setIsMonthly] = useState(false)
+    const [monthly, setIsMonthly] = useState(true)
+
     const handleToggle = () => {
         setIsMonthly((monthly) => !monthly)
     }
@@ -18,12 +19,38 @@ const Pricing: React.FC = () => {
                     Choose your Pricing Plan
                 </h2>
                 <div className="font-semibold flex items-center justify-center gap-4 mb-5  ">
-                    <span
+                    <div className="flex bg-gray-200 rounded-full p-1 w-max">
+                        <button
+                            onClick={handleToggle}
+                            className={`px-4 py-1 rounded-full ${
+                                monthly
+                                    ? 'bg-white text-black'
+                                    : 'text-gray-600'
+                            }`}
+                        >
+                            Monthly
+                        </button>
+                        <button
+                            onClick={handleToggle}
+                            className={`px-4 py-1 rounded-full ${
+                                !monthly
+                                    ? 'bg-white text-black'
+                                    : 'text-gray-600'
+                            }`}
+                        >
+                            Annual (save 15%)
+                        </button>
+                    </div>
+
+                    {/* toggle with input checked */}
+
+                    {/* <span
                         className={!monthly ? 'text-[#052D52]' : 'opacity-50'}
                     >
                         Monthly
                     </span>
-                    <label className=" relative w-[50px] h-[24px]">
+
+                    <label className="relative w-[50px] h-[24px]">
                         <input
                             type="checkbox"
                             checked={!monthly}
@@ -43,9 +70,10 @@ const Pricing: React.FC = () => {
                         >
                             15% OFF
                         </small>
-                    </span>
+                    </span> */}
                 </div>
-                <div className="border grid grid-cols-1 place-items-center md:grid-cols-3 gap-4">
+                {/* <div className="border grid grid-cols-1 place-items-center md:grid-cols-3 gap-4"> */}
+                <div className="border px-4 grid grid-cols-1 md:flex gap-4">
                     {plans.map((data) => {
                         return (
                             <PricingCard

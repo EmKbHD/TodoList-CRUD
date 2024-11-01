@@ -158,7 +158,8 @@ export const planMonthly = [
             "Question & Answer poll",
             "1 free trial Pro package (30 days)"
         ],
-        buttonText: "Get Started"
+        buttonText: "Get Started",
+        recommended: false
     },
     {
         category: "Professional",
@@ -175,13 +176,13 @@ export const planMonthly = [
             "Emojis poll",
             "1 free trial of the Premium package"
         ],
-        buttonText: "By Now",
+        buttonText: "Buy Now",
         recommended: true
     },
     {
         category: "Premium",
         price: "$20 / Mo",
-        detail: "Exclusive plan for teams",
+        detail: "Exclusive for teams",
         features: [
             "Unlimited voting",
             "Unlimited candidates",
@@ -195,7 +196,8 @@ export const planMonthly = [
             "Poll by Image",
             "Poll by stars"
         ],
-        buttonText: "By Now"
+        buttonText: "Buy Now",
+        recommended: false
     }
 ];
 
@@ -204,52 +206,55 @@ export const planAnnual = [
         category: "Free",
         price: "$0 / Year",
         detail: "Best for solo creator",
-        features: [
-            "Create 3 Votes",
-            "5 candidates",
-            "50 voters",
-            "Create 2 Surveys",
-            "Survey Unique choice",
-            "Question & Answer poll",
-            "1 free trial Pro package (30 days)"
+        features: 
+        // ["create 3 votes","create 2 Survey","1 free trial Pro Package"],
+        [
+            {title:"Create 3 Votes",
+              details:["5 candidates",
+              "50 voters",],},
+            {title:"Create 2 Surveys",
+              details:["Survey Unique choice",
+              "Question & Answer poll",]},
+            {title:"1 free trial Pro package (30 days)"},
         ],
-        buttonText: "Try"
+        buttonText: "Get Started",
+        recommended: false
     },
-    {
-        category: "Professional",
-        price: "$120 / Year",
-        detail: "Most popular plan",
-        features: [
-            "Create 20 Votes",
-            "7 candidates",
-            "Unlimited voters",
-            "Create 4 Surveys",
-            "Single choice survey",
-            "Question & Answer poll",
-            "Poll by stars",
-            "Emojis poll",
-            "1 free trial of the Premium package"
-        ],
-        buttonText: "By Now",
-        recommended: true
-    },
-    {
-        category: "Premium",
-        price: "$200 / Year",
-        detail: "Exclusive plan for teams",
-        features: [
-            "Unlimited voting",
-            "Unlimited candidates",
-            "Unlimited voters",
-            "Unlimited surveys",
-            "Single choice survey",
-            "Question & Answer poll",
-            "Graphic poll",
-            "Poll by emoji",
-            "Rating survey (0-10)",
-            "Poll by Image",
-            "Poll by Etoile"
-        ],
-        buttonText: "Buy Now"
-    }
+    // {
+    //     category: "Professional",
+    //     price: "$120 / Year",
+    //     detail: "Most popular plan",
+    //     features: [
+    //         "Create 20 Votes",
+    //         "7 candidates",
+    //         "Unlimited voters",
+    //         "Create 4 Surveys",
+    //         "Single choice survey",
+    //         "Question & Answer poll",
+    //         "Poll by stars",
+    //         "Emojis poll",
+    //         "1 free trial of the Premium package"
+    //     ],
+    //     buttonText: "Buy Now",
+    //     recommended: true
+    // },
+    // {
+    //     category: "Premium",
+    //     price: "$200 / Year",
+    //     detail: "Exclusive for teams",
+    //     features: [
+    //         "Unlimited voting",
+    //         "Unlimited candidates",
+    //         "Unlimited voters",
+    //         "Unlimited surveys",
+    //         "Single choice survey",
+    //         "Question & Answer poll",
+    //         "Graphic poll",
+    //         "Poll by emoji",
+    //         "Rating survey (0-10)",
+    //         "Poll by Image",
+    //         "Poll by stars"
+    //     ],
+    //     buttonText: "Buy Now"
+    // }
 ];

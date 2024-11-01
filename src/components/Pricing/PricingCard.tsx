@@ -1,10 +1,13 @@
-import React from 'react'
+interface Feature {
+    title: string
+    details?: string[]
+}
 
 type PricingCardProps = {
     category: string
     price: string
     detail: string
-    features: string[]
+    features: Feature[]
     buttonText: string
     recommended?: boolean
 }
@@ -19,15 +22,15 @@ const PricingCard: React.FC<PricingCardProps> = ({
 }) => {
     return (
         <div
-            className={
+            className={`grid ${
                 recommended
-                    ? ' relative text-center text-white py-16 px-4 bg-[#052D52] flex flex-col items-center justify-center rounded-lg  '
-                    : 'flex-col items-center justify-center mt-8 text-center py-8 px-2 border-gray-100 border rounded-lg'
-            }
+                    ? ' relative text-center text-white py-16 px-4 md:px-6 bg-[#052D52] rounded-lg  '
+                    : ' mt-8 text-center py-8 px-4 md:px-6 border-gray-100 border rounded-lg'
+            }`}
         >
             {recommended && (
                 <div className="absolute rounded-t-lg top-0 left-0 text-white text-center bg-red-500 py-2 block w-full ">
-                    Bonus
+                    MOST POPULAR
                 </div>
             )}
             <div>
@@ -35,12 +38,12 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 <p className="text-2xl font-bold mb-4">{price}</p>
                 <p className=" mb-4">{detail}</p>
             </div>
-            <ul className="text-left px-2">
+            <ul className="text-left ">
                 {features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                 ))}
             </ul>
-            <button className="mt-8 text-center font-semibold bg-red-500 hover:bg-red-600 w-full h-fit text-white py-2 px-4 rounded-lg">
+            <button className="mt-8 text-center font-semibold bg-red-500 hover:bg-red-600 h-fit text-white py-2 px-4 rounded-lg">
                 {buttonText}
             </button>
         </div>
