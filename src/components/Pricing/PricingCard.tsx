@@ -62,7 +62,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 ))}
             </ul>
 
-            <div className="flex justify-center items-center border my-8 px-6 w-full">
+            <div className="flex justify-center items-center my-8 px-6 w-full">
                 <button className=" w-full text-center font-semibold bg-red-500 hover:bg-red-600 h-fit text-white py-2 px-4 rounded-lg">
                     {buttonText}
                 </button>
