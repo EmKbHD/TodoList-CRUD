@@ -22,10 +22,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
 }) => {
     return (
         <div
-            className={`grid ${
+            className={` grid text-center px-4 w-full md:w-1/3 md:px-6 rounded-lg ${
                 recommended
-                    ? ' relative text-center text-white py-16 px-4 md:px-6 bg-[#052D52] rounded-lg  '
-                    : ' mt-8 text-center py-8 px-4 md:px-6 border-gray-100 border rounded-lg'
+                    ? 'relative text-white bg-[#052D52]   '
+                    : ' border-gray-200 border '
             }`}
         >
             {recommended && (
@@ -33,19 +33,40 @@ const PricingCard: React.FC<PricingCardProps> = ({
                     MOST POPULAR
                 </div>
             )}
-            <div>
+            <div className="mt-14">
                 <h3 className="text-2xl font-medium mb-2">{category}</h3>
-                <p className="text-2xl font-bold mb-4">{price}</p>
+                <p className="text-3xl font-bold mb-4 md:text-4xl">{price}</p>
                 <p className=" mb-4">{detail}</p>
+                <hr className="border-gray-200 mb-4" />
             </div>
-            <ul className="text-left ">
+
+            <ul className="text-left space-y-3">
                 {features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
+                    <li key={index} className="flex items-start">
+                        <span className="text-green-500 mr-2">✔️</span>
+                        <div
+                            className={`${recommended ? 'text-white' : 'text-gray-500'}`}
+                        >
+                            <h4
+                                className={`font-semibold ${recommended ? 'text-white' : 'text-blue-900 '}`}
+                            >
+                                {feature.title}
+                            </h4>
+                            <ul className="pl-6 list-disc text-sm">
+                                {feature.details?.map((detail, id) => (
+                                    <li key={id}>{detail}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </li>
                 ))}
             </ul>
-            <button className="mt-8 text-center font-semibold bg-red-500 hover:bg-red-600 h-fit text-white py-2 px-4 rounded-lg">
-                {buttonText}
-            </button>
+
+            <div className="flex justify-center items-center border my-8 px-6 w-full">
+                <button className=" w-full text-center font-semibold bg-red-500 hover:bg-red-600 h-fit text-white py-2 px-4 rounded-lg">
+                    {buttonText}
+                </button>
+            </div>
         </div>
     )
 }

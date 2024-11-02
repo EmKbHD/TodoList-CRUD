@@ -12,6 +12,7 @@ import photo1 from "../assets/photo-1.png"
 import photo2 from "../assets/photo-2.png"
 import photo3 from "../assets/photo-3.png"
 
+
 export const NavbarMenu = [
  {
   id:1,
@@ -147,67 +148,9 @@ export const TestimonialsData = [{
 export const planMonthly = [
     {
         category: "Free",
-        price: "$0 / Mo",
-        detail: "Best for solo creator",
-        features: [
-            "Create 3 Votes",
-            "5 candidates",
-            "50 voters",
-            "Create 2 Surveys",
-            "Survey Unique choice",
-            "Question & Answer poll",
-            "1 free trial Pro package (30 days)"
-        ],
-        buttonText: "Get Started",
-        recommended: false
-    },
-    {
-        category: "Professional",
-        price: "$13 / Mo",
-        detail: "Most popular plan",
-        features: [
-            "Create 20 Votes",
-            "7 candidates",
-            "Unlimited voters",
-            "Create 4 Surveys",
-            "Single choice survey",
-            "Question & Answer poll",
-            "Poll by stars",
-            "Emojis poll",
-            "1 free trial of the Premium package"
-        ],
-        buttonText: "Buy Now",
-        recommended: true
-    },
-    {
-        category: "Premium",
-        price: "$20 / Mo",
-        detail: "Exclusive for teams",
-        features: [
-            "Unlimited voting",
-            "Unlimited candidates",
-            "Unlimited voters",
-            "Unlimited surveys",
-            "Single choice survey",
-            "Question & Answer poll",
-            "Graphic poll",
-            "Poll by emoji",
-            "Rating survey (0-10)",
-            "Poll by Image",
-            "Poll by stars"
-        ],
-        buttonText: "Buy Now",
-        recommended: false
-    }
-];
-
-export const planAnnual = [
-    {
-        category: "Free",
         price: "$0 / Year",
         detail: "Best for solo creator",
         features: 
-        // ["create 3 votes","create 2 Survey","1 free trial Pro Package"],
         [
             {title:"Create 3 Votes",
               details:["5 candidates",
@@ -220,41 +163,98 @@ export const planAnnual = [
         buttonText: "Get Started",
         recommended: false
     },
-    // {
-    //     category: "Professional",
-    //     price: "$120 / Year",
-    //     detail: "Most popular plan",
-    //     features: [
-    //         "Create 20 Votes",
-    //         "7 candidates",
-    //         "Unlimited voters",
-    //         "Create 4 Surveys",
-    //         "Single choice survey",
-    //         "Question & Answer poll",
-    //         "Poll by stars",
-    //         "Emojis poll",
-    //         "1 free trial of the Premium package"
-    //     ],
-    //     buttonText: "Buy Now",
-    //     recommended: true
-    // },
-    // {
-    //     category: "Premium",
-    //     price: "$200 / Year",
-    //     detail: "Exclusive for teams",
-    //     features: [
-    //         "Unlimited voting",
-    //         "Unlimited candidates",
-    //         "Unlimited voters",
-    //         "Unlimited surveys",
-    //         "Single choice survey",
-    //         "Question & Answer poll",
-    //         "Graphic poll",
-    //         "Poll by emoji",
-    //         "Rating survey (0-10)",
-    //         "Poll by Image",
-    //         "Poll by stars"
-    //     ],
-    //     buttonText: "Buy Now"
-    // }
+    {
+        category: "Professional",
+        price: "$13 / Year",
+        detail: "Most popular plan",
+        features: [
+            {title:"Create 20 Votes",
+            details:["7 candidates",
+            "Unlimited voters",]},
+            {title:"Create 4 Surveys",
+            details:["Single choice survey",
+            "Question & Answer poll",
+            "Poll by stars",
+            "Emojis poll",]},
+            {title:"1 free trial of the Premium package"}
+        ],
+        buttonText: "Buy Now",
+        recommended: true
+    },
+    {
+        category: "Premium",
+        price: "$20 / Year",
+        detail: "Exclusive for teams",
+        features: [
+            {title:"Unlimited voting",
+            details:["Unlimited candidates",
+            "Unlimited voters",]},
+            {title:"Unlimited surveys",
+            details:["Single choice survey",
+            "Question & Answer poll",
+            "Graphic poll",
+            "Poll by emoji",
+            "Rating survey (0-10)",
+            "Poll by Image",
+            "Poll by stars"]}
+        ],
+        buttonText: "Buy Now"
+    }
+];
+
+export const planAnnual = [
+    {
+        category: "Free",
+        price: "$0 / Year",
+        detail: "Best for solo creator",
+        features: 
+        [
+            {title:"Create 3 Votes",
+              details:["5 candidates",
+              "50 voters",],},
+            {title:"Create 2 Surveys",
+              details:["Survey Unique choice",
+              "Question & Answer poll",]},
+            {title:"1 free trial Pro package (30 days)"},
+        ],
+        buttonText: "Get Started",
+        recommended: false
+    },
+    {
+        category: "Professional",
+        price: "$120 / Year",
+        detail: "Most popular plan",
+        features: [
+            {title:"Create 20 Votes",
+            details:["7 candidates",
+            "Unlimited voters",]},
+            {title:"Create 4 Surveys",
+            details:["Single choice survey",
+            "Question & Answer poll",
+            "Poll by stars",
+            "Emojis poll",]},
+            {title:"1 free trial of the Premium package"}
+        ],
+        buttonText: "Buy Now",
+        recommended: true
+    },
+    {
+        category: "Premium",
+        price: "$200 / Year",
+        detail: "Exclusive for teams",
+        features: [
+            {title:"Unlimited voting",
+            details:["Unlimited candidates",
+            "Unlimited voters",]},
+            {title:"Unlimited surveys",
+            details:["Single choice survey",
+            "Question & Answer poll",
+            "Graphic poll",
+            "Poll by emoji",
+            "Rating survey (0-10)",
+            "Poll by Image",
+            "Poll by stars"]}
+        ],
+        buttonText: "Buy Now"
+    }
 ];

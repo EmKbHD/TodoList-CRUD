@@ -73,7 +73,7 @@ const Pricing: React.FC = () => {
                     </span> */}
                 </div>
                 {/* <div className="border grid grid-cols-1 place-items-center md:grid-cols-3 gap-4"> */}
-                <div className="border px-4 grid grid-cols-1 md:flex gap-4">
+                <div className=" px-4 grid grid-cols-1 md:flex gap-4">
                     {plans.map((data) => {
                         return (
                             <PricingCard
