@@ -66,7 +66,7 @@ const Hero = () => {
                             initial={{ opacity: 0, x: 100 }}
                             src={HeroImage}
                             alt="VOTE IMAGE"
-                            className="w-[21.875rem] h-2/3 md:w-[34.375rem] xl:w-[43.75rem] drop-shadow "
+                            className="w-[21.875rem] h-3/4 md:w-[34.375rem] xl:w-[43.75rem] drop-shadow "
                         />
                     </div>
                 </div>

@@ -1,52 +1,46 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-        
-    extend: {
+    content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+    theme: {
+        extend: {
+            screens: {
+                sm: '640px',
+                // => @media (min-width: 640px) { ... }
 
-       screens: {
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
+                md: '767px',
+                // => @media (min-width: 767px) { ... }
 
-      'md': '767px',
-      // => @media (min-width: 767px) { ... }
+                lg: '1024px',
+                // => @media (min-width: 1024px) { ... }
 
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+                xl: '1280px',
+                // => @media (min-width: 1280px) { ... }
 
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+            },
 
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
+            colors: {
+                primary: 'rgb(5, 45, 82)',
+                secondary: 'rgb(230, 41, 35)',
+            },
+
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    sm: '2rem',
+                    lg: '4rem',
+                    xl: '5rem',
+                    '2xl': '6rem',
+                },
+            },
+        },
+        fontFamily: {
+            suse: ['SUSE', 'Inter', 'sans-serif'],
+            sans: ['Raleway', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+        },
     },
-
-      colors:{
-        primary:"rgb(5, 45, 82)",
-        secondary:"rgb(230, 41, 35)",
-      },
-
-      container:{
-        center:true,
-        padding:{
-          DEFAULT:"1rem",
-          sm:"2rem",
-          lg:"4rem",
-          xl:"5rem",
-          "2xl":"6rem",
-        }
-      }
-
-    },
-    fontFamily: {
-      suse: ['SUSE', 'Inter', 'sans-serif'],
-      sans: ['Raleway', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    }
-  },
-  plugins: [],
+    plugins: [],
 }
